@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Component } from "react";
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from "react-router-dom";
@@ -79,9 +79,7 @@ const EditCampusView = ({campus}) => {
           <button type="submit">
               Save Changes
             </button>
-            <Link to={`../campuses`}>
-              <button>Cancel</button>
-            </Link>
+            <button type="reset" onClick={() => {history.push("/campuses")}}>Cancel</button>
           <br/>
           <br/>
         </form>
