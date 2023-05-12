@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchCampusThunk } from "../../store/thunks";
+import Header from './Header';
 
 import EditCampusView from "../views/EditCampusView";
 
@@ -11,11 +12,18 @@ class EditCampusContainer extends Component {
 
   }
 
+  componentWillUnmount() {
+    this.setState({redirect: true});
+}
+
   render() {
     return (
-      <EditCampusView
-      campus={this.props.campus}
-      />
+      <div>
+        <Header />
+        <EditCampusView
+        campus={this.props.campus}
+        />
+      </div>
     );
   }
 }
