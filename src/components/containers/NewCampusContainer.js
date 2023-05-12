@@ -46,7 +46,7 @@ class NewCampusContainer extends Component {
     };
     
     // Add new student in back-end database
-    let newStudent = await this.props.addCampus(campus);
+    let newCampus = await this.props.addCampus(campus);
 
     // Update state, and trigger redirect to show the new student
     this.setState({
@@ -55,7 +55,7 @@ class NewCampusContainer extends Component {
       description: "", 
       imageUrl: "",  
       redirect: true, 
-      redirectId: campus.id
+      redirectId: newCampus.id
     });
   }
 
