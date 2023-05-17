@@ -21,7 +21,7 @@ class NewCampusContainer extends Component {
       name: "",
       address: "",
       description: "",
-      imageUrl: "", 
+      imageUrl: "https://img.freepik.com/free-vector/school-building-educational-institution-college_107791-1051.jpg", 
       redirect: false, 
       redirectId: null
     };
