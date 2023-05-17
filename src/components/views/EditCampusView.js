@@ -52,7 +52,7 @@ const EditCampusView = ({campus}) => {
       <div className={classes.formContainer}>
         <div className={classes.formTitle}>
           <Typography style={{fontWeight: 'bold', fontFamily: 'Courier, sans-serif', fontSize: '20px', color: '#11153e'}}>
-            Add a Campus
+            Edit the Campus
           </Typography>
         </div>
         <form style={{textAlign: 'center'}} onSubmit={handleSubmit}>
