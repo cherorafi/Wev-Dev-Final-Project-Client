@@ -101,7 +101,7 @@ const EditStudentView = ({student}) => {
           <button type="submit">
               Save Changes
             </button>
-            <button type="reset" onClick={() => {history.push("/students")}}>Cancel</button>
+            <button type="reset" onClick={() => {history.push("../students/")}}>Cancel</button>
           <br/>
           <br/>
         </form>
